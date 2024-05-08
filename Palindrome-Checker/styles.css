@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main-container {
+    background-color: #003C43;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    color: wheat;
+    background-color: #135D66;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box1 {
+    width: 50%;
+    height: 80%;
+    padding-right: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-right: 8px solid #77B0AA;
+    box-shadow: 10px 0 5px -7px rgb(0, 0, 0, 0.3) ;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.input {
+    margin-top: 15px;
+    color: #00FFFF;
+    font-size: medium;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-left: 10%;
+    text-align: center;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #00FFFF;
+    background-color: #135D66;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #42a77d;
+    text-align: center;
+    font-size: small;
+    font-weight: 100;
+}
+
+.check {
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: 10px;
+    background-color: #77B0AA;
+    border: none;
+    border-radius: 9px;
+    width: 75px;
+    height: 30px;
+    color: #333333;
+    font-size: large;
+    font-weight: 900;
+}
+
+.check:hover {
+    color: #77B0AA;
+    background-color: #333333;
+}
+
+.result {
+    margin: 0 auto;
+    height: 50%;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(255, 240, 25);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box1 {
+        height: 45%;
+        border: none;
+        margin: 20px 0;
+        box-shadow: 0 0 0;
+    }
+
+    .result {
+        height: 35%;
+        width: 50%;
+        border-radius: 10px;
+        border: none;
+    }
+}
