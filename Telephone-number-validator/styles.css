@@ -44,13 +44,13 @@ body {
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 0;
+    overflow: hidden;
 }
 
 #user-input {
     background-color: transparent;
     border: none;
     border-bottom: 3px solid var(--Color-B);
-    overflow: hidden;
     max-width: 70%;
     font-size: 20px;
     font-weight: 600;
@@ -60,7 +60,6 @@ body {
 
 #user-input:focus {
     border-bottom: 3px solid var(--Color-B);
-    text-align: center;
     box-shadow: 0px 5px 5px -5px var(--Shadow-Color);
 }
 
@@ -78,7 +77,6 @@ button {
     align-items: center;
     background-color: var(--Color-B);
     color: var(--Color-A);
-    border: none;
     border-radius: 5px;
     border: 2px solid var(--Color-B);
     z-index: 1;
@@ -129,9 +127,15 @@ button:hover::before{
         gap: 5px;
     }
     button {
-        height: 25px;
+        height: 20px;
         width: 70px;
         font-size: 15px;
+    }
+    #user-input {
+        font-size: 15px;
+    }
+    h2 {
+        margin-top: -10px
     }
 }
 
@@ -143,11 +147,15 @@ button:hover::before{
     border-top: 0px solid transparent;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    max-width: 50%;
 }
 
-/* .hidden {
+.hidden {
     visibility: hidden;
-} */
+}
 
 
 @keyframes showRight {
