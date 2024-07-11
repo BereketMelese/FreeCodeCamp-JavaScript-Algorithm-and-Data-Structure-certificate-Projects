@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #071952;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    height: 30%;
+    width: 60%;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #088395;
+    color: #D8EFD3;
+}
+
+.input label {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.info .btn {
+    border: none;
+    height: 18%;
+    margin: 12px 0;
+    width: 140px;
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+.info .btn:hover {
+    cursor: pointer;
+    scale: 1.03;
+}
+
+.info .price_value {
+    font-size: 25px;
+}
+
+.price_value p{
+    display: inline-block;
+}
+
+.input input {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 30px;
+    background-color: #EBF4F6;
+    margin-bottom: 10px;
+}
+
+.output {
+    height: 350px;
+    width: 60%;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 23px;
+}
+
+.output #change-due {
+    height: 100%;
+    width: 50%;
+    background-color: #088395;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    color: #D8EFD3;
+}
+
+.output .money_left {
+    height: 100%;
+    width: 50%;
+    background-color: #EBF4F6;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    color: #088395;
+}
+
+@media (max-width: 600px) {
+    .info {
+        width: 90%;
+    }
+
+    .output {
+        width: 90%;
+    }
+}
+
+
