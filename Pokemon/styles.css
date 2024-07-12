@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #809fff;
+    overflow-x: hidden  ;
+}
+
+.search {
+    margin-left: 15vw;
+    padding: 14px 16px;
+}
+
+.search form input {
+    height: 38px;
+    border-radius: 25px;
+    border: none;
+    width: 50vw;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.search form button {
+    height: 38px;
+    border-radius: 25px;
+    border: none;
+    width: 15vw;
+    background-color: #bfcfff;
+    color: #001247;
+    font-size: 20px;
+}
+
+.output {
+    width: 100vw;
+    display: flex;
+}
+
+.left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.types {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.type {
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    color: #ffffff;
+    background-color: #001247;
+}
+
+.one, .two {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.one span, two {
+    text-align: center;
+    font-size: 2rem;
+    color: #001247;
+}
+
+.two span {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #000066;
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.a, .b, .c {
+    display: flex;
+    gap: 50px;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(
+        #0000ff var(--percentage, 0deg),
+        #ddd 0deg
+    );
+}
+
+.inner-circle {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.outer {
+    width: 160px;
+    height: 160px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-wrap: wrap;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer span {
+    margin: 0;
+    padding: 0;
+}
+
+.outer div {
+    margin: 0;
+    padding: 0;
+}
