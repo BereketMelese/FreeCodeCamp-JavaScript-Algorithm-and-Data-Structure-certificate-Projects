@@ -7,6 +7,87 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="search">
+        <form role="search" id="form">
+            <input type="text" placeholder="Enter your search term..." id="search-input" required>
+            <button id="search-button">Search</button>
+        </form>
+    </div>
+
+    <div class="output">
+       <div class="left-side">
+            <div class="img-container" id="img-container"></div>
+
+            <div class="types" id="types"></div>
+            
+            <div class="one">
+                <span id="pokemon-name"></span>
+                <span id="pokemon-id"></span>
+            </div>
+
+            <div class="two">
+                <span id="weight"></span>
+                <span id="height"></span>
+            </div>
+
+        </div>
+        <div class="right-side">
+            <div class="a">
+                <div class="outer">
+                    <span>HP</span>
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <div id="hp"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <span>Attack</span>
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <div id="attack"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b">
+                <div class="outer">
+                    <span>Defense</span>
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <div id="defense"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <span>Special Attack</span>
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <div id="special-attack"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c">
+                <div class="outer">
+                    <span>Special Defense</span>
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <div id="special-defense"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <span>Speed</span>
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <div id="speed"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
